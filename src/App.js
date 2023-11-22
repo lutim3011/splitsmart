@@ -13,6 +13,10 @@ import { store } from "redux/store";
 import { ReactReduxFirebaseProvider } from "react-redux-firebase";
 import { Provider } from "react-redux";
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from "routes/root";
+import { siteRoutes } from "routes/Routes";
+
 const proTheme = extendTheme(theme);
 
 const extenstion = {
@@ -25,6 +29,8 @@ const extenstion = {
 const myTheme = extendTheme(extenstion, proTheme);
 
 function App() {
+  const router = createBrowserRouter(siteRoutes);
+
   const rrfProps = {
     firebase: app,
     config: firebaseConfig,
@@ -34,7 +40,9 @@ function App() {
   return (
     <Provider store={store}>
       <ReactReduxFirebaseProvider {...rrfProps}>
-        <ChakraBaseProvider theme={myTheme}></ChakraBaseProvider>
+        <ChakraBaseProvider theme={myTheme}>
+          <RouterProvider router={router} />
+        </ChakraBaseProvider>
       </ReactReduxFirebaseProvider>
     </Provider>
   );

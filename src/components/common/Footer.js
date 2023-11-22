@@ -8,7 +8,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { currentYear } from "commons/const";
+import { CURRENT_YEAR } from "commons/const";
 
 export default function SmallWithLogoMiddle() {
   return (
@@ -26,7 +26,7 @@ export default function SmallWithLogoMiddle() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© {currentYear} SmartSplit. All rights reserved</Text>
+          <Text>© {CURRENT_YEAR} SmartSplit. All rights reserved</Text>
         </Container>
       </Box>
     </Center>

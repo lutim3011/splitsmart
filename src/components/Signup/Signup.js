@@ -17,9 +17,123 @@ import {
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import Layout from "components/common/Layout";
+import { Form, useForm } from "react-hook-form";
+import FormPassword from "commons/formFields/FormPassword";
+import {
+  ConfirmPasswordRules,
+  EmailRules,
+  FirstNameRules,
+  LastNameRules,
+  PasswordRules,
+} from "commons/rules";
+import { msg } from "commons/messages";
+import FormInput from "commons/formFields/FormInput";
 
 export default function Signup() {
   const [showPassword, setShowPassword] = useState(false);
+  const [errorEmailMessage, setErrorEmailMessage] = useState("");
+
+  const {
+    register,
+    handleSubmit,
+    trigger,
+    watch,
+    control,
+    formState: { errors, dirtyFields },
+  } = useForm();
+
+  //get passwords
+  const passwordValue = watch("password");
+  const cPasswordValue = watch("confirmPassword");
+
+  const onSubmit = data => console.log(data);
+
+  const firstName = (
+    <Box>
+      <FormInput
+        name={"fName"}
+        id={"firstName"}
+        type={"text"}
+        label={"First Name :"}
+        register={register}
+        rules={FirstNameRules}
+        errors={errors}
+        isRequired={true}
+      />
+    </Box>
+  );
+
+  const lastName = (
+    <Box>
+      <FormInput
+        name="lname"
+        id={"lastName"}
+        type={"text"}
+        label={"Last Name:"}
+        register={register}
+        rules={LastNameRules}
+        errors={errors}
+      />
+    </Box>
+  );
+
+  const email = (
+    <Box>
+      <FormInput
+        name="email"
+        id={"email"}
+        type={"email"}
+        label={"Email:"}
+        register={register}
+        rules={EmailRules}
+        errorMsg={errorEmailMessage}
+        errors={errors}
+        isRequired={true}
+      />
+    </Box>
+  );
+
+  const passwords = (
+    <>
+      <FormPassword
+        name="password"
+        label="Password:"
+        type="password"
+        id="password"
+        placeholder=""
+        autoFocus={false}
+        register={register}
+        rules={PasswordRules}
+        errors={errors}
+        dirtyFields={dirtyFields}
+        passwordValue={passwordValue}
+      />
+      <FormPassword
+        cPasswordValue={cPasswordValue}
+        confirmPasswordMessage={msg.passwordNotMatch}
+        name="confirmPassword"
+        label="Confirm Password:"
+        type="password"
+        id="confirmPassword"
+        placeholder=""
+        autoFocus={false}
+        register={register}
+        rules={ConfirmPasswordRules}
+        errors={errors}
+        isConfirmPassword={true}
+        passwordValue={passwordValue}
+        dirtyFields={dirtyFields}
+        trigger={trigger}
+      />
+    </>
+  );
+
+  const userName = (
+    <HStack>
+      {firstName}
+      {lastName}
+    </HStack>
+  );
 
   return (
     <Layout>
@@ -35,67 +149,39 @@ export default function Signup() {
               Sign up
             </Heading>
           </Stack>
-          <Box
-            rounded={"lg"}
-            bg={useColorModeValue("white", "gray.700")}
-            boxShadow={"lg"}
-            p={8}
-          >
-            <Stack spacing={4}>
-              <HStack>
-                <Box>
-                  <FormControl id="firstName" isRequired>
-                    <FormLabel>First Name</FormLabel>
-                    <Input type="text" />
-                  </FormControl>
-                </Box>
-                <Box>
-                  <FormControl id="lastName">
-                    <FormLabel>Last Name</FormLabel>
-                    <Input type="text" />
-                  </FormControl>
-                </Box>
-              </HStack>
-              <FormControl id="email" isRequired>
-                <FormLabel>Email address</FormLabel>
-                <Input type="email" />
-              </FormControl>
-              <FormControl id="password" isRequired>
-                <FormLabel>Password</FormLabel>
-                <InputGroup>
-                  <Input type={showPassword ? "text" : "password"} />
-                  <InputRightElement h={"full"}>
-                    <Button
-                      variant={"ghost"}
-                      onClick={() =>
-                        setShowPassword(showPassword => !showPassword)
-                      }
-                    >
-                      {showPassword ? <ViewIcon /> : <ViewOffIcon />}
-                    </Button>
-                  </InputRightElement>
-                </InputGroup>
-              </FormControl>
-              <Stack spacing={10} pt={2}>
-                <Button
-                  loadingText="Submitting"
-                  size="lg"
-                  bg={"blue.400"}
-                  color={"white"}
-                  _hover={{
-                    bg: "blue.500",
-                  }}
-                >
-                  Sign up
-                </Button>
+          <Form onSubmit={handleSubmit(onSubmit)} control={control}>
+            <Box
+              rounded={"lg"}
+              bg={useColorModeValue("white", "gray.700")}
+              boxShadow={"lg"}
+              p={8}
+            >
+              <Stack spacing={4}>
+                {userName}
+                {email}
+                {passwords}
+                <Stack spacing={10} pt={2}>
+                  <Button
+                    loadingText="Submitting"
+                    size="lg"
+                    bg={"blue.400"}
+                    color={"white"}
+                    _hover={{
+                      bg: "blue.500",
+                    }}
+                    type="submit"
+                  >
+                    Sign up
+                  </Button>
+                </Stack>
+                <Stack pt={6}>
+                  <Text align={"center"}>
+                    Already a user? <Link color={"blue.400"}>Login</Link>
+                  </Text>
+                </Stack>
               </Stack>
-              <Stack pt={6}>
-                <Text align={"center"}>
-                  Already a user? <Link color={"blue.400"}>Login</Link>
-                </Text>
-              </Stack>
-            </Stack>
-          </Box>
+            </Box>
+          </Form>
         </Stack>
       </Flex>
     </Layout>

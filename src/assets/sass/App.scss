@@ -1,0 +1,8 @@
+@import "./variable.scss";
+
+.text-danger {
+    @include md {
+        color: $danger;
+        font-size: $ft-h6;
+    }
+}

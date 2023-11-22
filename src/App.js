@@ -14,7 +14,8 @@ import { ReactReduxFirebaseProvider } from "react-redux-firebase";
 import { Provider } from "react-redux";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "routes/root";
+
+import "assets/sass/App.scss";
 import { siteRoutes } from "routes/Routes";
 
 const proTheme = extendTheme(theme);

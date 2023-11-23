@@ -18,21 +18,7 @@ export const firebaseConfig = {
 };
 
 export const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+
 export const db = getFirestore(app);
 
-// Use the imported functions
-export const newUser = (email, password) => {
-  createUserWithEmailAndPassword(auth, email, password)
-    .then(userCredential => {
-      // Signed in
-      const user = userCredential.user;
-      // ...
-    })
-    .catch(error => {
-      // Handle Errors here.
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // ...
-    });
-};
+

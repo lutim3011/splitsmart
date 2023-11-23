@@ -63,8 +63,8 @@ const FormInput = ({
               : "form-control"
           }
           {...rest}
-          innerRef={ref}
-          onWheel={ev => ev.target.blur()}
+          ref={ref}
+          onWheel={(ev) => ev.target.blur()}
           placeholder={placeholder}
           maxLength={maxLength || rules?.maxLength?.value}
         />

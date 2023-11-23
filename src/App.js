@@ -18,6 +18,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "assets/sass/App.scss";
 import { siteRoutes } from "routes/Routes";
 
+
+
 const proTheme = extendTheme(theme);
 
 const extenstion = {
@@ -32,9 +34,11 @@ const myTheme = extendTheme(extenstion, proTheme);
 function App() {
   const router = createBrowserRouter(siteRoutes);
 
+  
+
   const rrfProps = {
     firebase: app,
-    config: firebaseConfig,
+    config: {},
     dispatch: store.dispatch,
     createFirestoreInstance,
   };

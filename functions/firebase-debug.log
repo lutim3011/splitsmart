@@ -1,0 +1,731 @@
+[debug] [2023-11-22T19:43:33.328Z] ----------------------------------------------------------------------
+[debug] [2023-11-22T19:43:33.331Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LutiM\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2023-11-22T19:43:33.332Z] CLI Version:   12.9.1
+[debug] [2023-11-22T19:43:33.332Z] Platform:      win32
+[debug] [2023-11-22T19:43:33.332Z] Node Version:  v16.14.1
+[debug] [2023-11-22T19:43:33.339Z] Time:          Wed Nov 22 2023 14:43:33 GMT-0500 (Eastern Standard Time)
+[debug] [2023-11-22T19:43:33.339Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-22T19:43:33.499Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-22T19:43:33.500Z] > authorizing via signed-in user (mitmistry311@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-11-22T19:43:33.519Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-22T19:43:33.520Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-11-22T19:43:33.539Z] [hub] writing locator at C:\Users\LutiM\AppData\Local\Temp\hub-splitsmart-211ac.json
+[debug] [2023-11-22T19:43:33.577Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-22T19:43:33.577Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-11-22T19:43:33.578Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-11-22T19:43:33.587Z] defaultcredentials: writing to file C:\Users\LutiM\AppData\Roaming\firebase\mitmistry311_gmail_com_application_default_credentials.json
+[debug] [2023-11-22T19:43:33.615Z] Setting GAC to C:\Users\LutiM\AppData\Roaming\firebase\mitmistry311_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\LutiM\\AppData\\Roaming\\firebase\\mitmistry311_gmail_com_application_default_credentials.json"}}
+[debug] [2023-11-22T19:43:33.617Z] > refreshing access token with scopes: []
+[debug] [2023-11-22T19:43:33.620Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-22T19:43:33.620Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-22T19:43:33.903Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-22T19:43:33.904Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-22T19:43:33.917Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/splitsmart-211ac/adminSdkConfig [none]
+[debug] [2023-11-22T19:43:34.355Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/splitsmart-211ac/adminSdkConfig 200
+[debug] [2023-11-22T19:43:34.355Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/splitsmart-211ac/adminSdkConfig {"projectId":"splitsmart-211ac","storageBucket":"splitsmart-211ac.appspot.com","locationId":"us-central"}
+[info] i  ui: downloading ui-v1.11.7.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.7.zip..."}}
+[debug] [2023-11-22T19:43:34.385Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 
+[debug] [2023-11-22T19:43:34.568Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 200
+[debug] [2023-11-22T19:43:34.568Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip [stream]
+[debug] [2023-11-22T19:43:36.178Z] Data is 3064105
+[debug] [2023-11-22T19:43:36.179Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-11-22T19:43:36.179Z] [unzip] Processing entry: client\
+[debug] [2023-11-22T19:43:36.179Z] [unzip] mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\
+[debug] [2023-11-22T19:43:36.182Z] [unzip] Entry: client/favicon.ico (compressed_size=2497 bytes, uncompressed_size=7406 bytes)
+[debug] [2023-11-22T19:43:36.183Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2023-11-22T19:43:36.183Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.184Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\favicon.ico
+[debug] [2023-11-22T19:43:36.202Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=7231 bytes, uncompressed_size=7367 bytes)
+[debug] [2023-11-22T19:43:36.202Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2023-11-22T19:43:36.202Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.204Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\apple-touch-icon.png
+[debug] [2023-11-22T19:43:36.209Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=16987 bytes, uncompressed_size=18186 bytes)
+[debug] [2023-11-22T19:43:36.209Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2023-11-22T19:43:36.210Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.212Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-512x512.png
+[debug] [2023-11-22T19:43:36.218Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-11-22T19:43:36.219Z] [unzip] Processing entry: client\assets\
+[debug] [2023-11-22T19:43:36.219Z] [unzip] mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\
+[debug] [2023-11-22T19:43:36.221Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-11-22T19:43:36.221Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2023-11-22T19:43:36.222Z] [unzip] mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\
+[debug] [2023-11-22T19:43:36.223Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2023-11-22T19:43:36.223Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2023-11-22T19:43:36.224Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions
+[debug] [2023-11-22T19:43:36.225Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\default-extension.png
+[debug] [2023-11-22T19:43:36.233Z] [unzip] Entry: client/assets/index.58ca09f7.css (compressed_size=37601 bytes, uncompressed_size=321252 bytes)
+[debug] [2023-11-22T19:43:36.234Z] [unzip] Processing entry: client\assets\index.58ca09f7.css
+[debug] [2023-11-22T19:43:36.234Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-11-22T19:43:36.235Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.58ca09f7.css
+[debug] [2023-11-22T19:43:36.249Z] [unzip] Entry: client/assets/index.c2583d42.js (compressed_size=526232 bytes, uncompressed_size=1860152 bytes)
+[debug] [2023-11-22T19:43:36.249Z] [unzip] Processing entry: client\assets\index.c2583d42.js
+[debug] [2023-11-22T19:43:36.250Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-11-22T19:43:36.251Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js
+[debug] [2023-11-22T19:43:36.335Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-11-22T19:43:36.337Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2023-11-22T19:43:36.337Z] [unzip] mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\
+[debug] [2023-11-22T19:43:36.344Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2023-11-22T19:43:36.345Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-11-22T19:43:36.345Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.346Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-11-22T19:43:36.351Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2023-11-22T19:43:36.351Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-11-22T19:43:36.351Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.352Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-11-22T19:43:36.359Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2023-11-22T19:43:36.360Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-11-22T19:43:36.360Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.362Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-11-22T19:43:36.368Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2023-11-22T19:43:36.369Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-11-22T19:43:36.369Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.370Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-11-22T19:43:36.374Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2023-11-22T19:43:36.374Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-11-22T19:43:36.374Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.378Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-11-22T19:43:36.383Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2023-11-22T19:43:36.384Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-11-22T19:43:36.384Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.385Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-11-22T19:43:36.389Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2023-11-22T19:43:36.390Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-11-22T19:43:36.390Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.391Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-11-22T19:43:36.396Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2023-11-22T19:43:36.397Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-11-22T19:43:36.398Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.400Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-11-22T19:43:36.406Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2023-11-22T19:43:36.406Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-11-22T19:43:36.406Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.408Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-11-22T19:43:36.412Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2023-11-22T19:43:36.413Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-11-22T19:43:36.413Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.414Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-11-22T19:43:36.419Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2023-11-22T19:43:36.420Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-11-22T19:43:36.420Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.422Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-11-22T19:43:36.427Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2023-11-22T19:43:36.427Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-11-22T19:43:36.427Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.428Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-11-22T19:43:36.433Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2023-11-22T19:43:36.434Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-11-22T19:43:36.434Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-11-22T19:43:36.435Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-11-22T19:43:36.441Z] [unzip] Entry: client/assets/index.c2583d42.js.map (compressed_size=1778557 bytes, uncompressed_size=7961927 bytes)
+[debug] [2023-11-22T19:43:36.441Z] [unzip] Processing entry: client\assets\index.c2583d42.js.map
+[debug] [2023-11-22T19:43:36.442Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-11-22T19:43:36.443Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js.map
+[debug] [2023-11-22T19:43:36.719Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-11-22T19:43:36.720Z] [unzip] Processing entry: client\assets\img\
+[debug] [2023-11-22T19:43:36.721Z] [unzip] mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\
+[debug] [2023-11-22T19:43:36.722Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2023-11-22T19:43:36.724Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2023-11-22T19:43:36.725Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\img
+[debug] [2023-11-22T19:43:36.735Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\database.png
+[debug] [2023-11-22T19:43:36.741Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=838 bytes, uncompressed_size=1504 bytes)
+[debug] [2023-11-22T19:43:36.742Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2023-11-22T19:43:36.742Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.744Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\safari-pinned-tab.svg
+[debug] [2023-11-22T19:43:36.750Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=5406 bytes, uncompressed_size=5723 bytes)
+[debug] [2023-11-22T19:43:36.755Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2023-11-22T19:43:36.756Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.759Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\mstile-150x150.png
+[debug] [2023-11-22T19:43:36.766Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2023-11-22T19:43:36.767Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2023-11-22T19:43:36.767Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.769Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\browserconfig.xml
+[debug] [2023-11-22T19:43:36.777Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2023-11-22T19:43:36.778Z] [unzip] Processing entry: client\robots.txt
+[debug] [2023-11-22T19:43:36.778Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.781Z] [unzip] Writing file: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\robots.txt
+[debug] [2023-11-22T19:43:36.800Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3064 bytes)
+[debug] [2023-11-22T19:43:36.801Z] [unzip] Processing entry: client\index.html
+[debug] [2023-11-22T19:43:36.801Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.804Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\index.html
+[debug] [2023-11-22T19:43:36.813Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=757 bytes, uncompressed_size=777 bytes)
+[debug] [2023-11-22T19:43:36.813Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2023-11-22T19:43:36.814Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.817Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\favicon-16x16.png
+[debug] [2023-11-22T19:43:36.841Z] [unzip] Entry: client/manifest.json (compressed_size=246 bytes, uncompressed_size=551 bytes)
+[debug] [2023-11-22T19:43:36.842Z] [unzip] Processing entry: client\manifest.json
+[debug] [2023-11-22T19:43:36.843Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.845Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\manifest.json
+[debug] [2023-11-22T19:43:36.852Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=1175 bytes, uncompressed_size=1175 bytes)
+[debug] [2023-11-22T19:43:36.852Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2023-11-22T19:43:36.853Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.858Z] [unzip] Writing file: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\favicon-32x32.png
+[debug] [2023-11-22T19:43:36.862Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=7602 bytes, uncompressed_size=7834 bytes)
+[debug] [2023-11-22T19:43:36.863Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2023-11-22T19:43:36.863Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-11-22T19:43:36.864Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-192x192.png
+[debug] [2023-11-22T19:43:36.868Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-11-22T19:43:36.869Z] [unzip] Processing entry: server\
+[debug] [2023-11-22T19:43:36.869Z] [unzip] mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\server\
+[debug] [2023-11-22T19:43:36.871Z] [unzip] Entry: server/server.js (compressed_size=343746 bytes, uncompressed_size=1346374 bytes)
+[debug] [2023-11-22T19:43:36.871Z] [unzip] Processing entry: server\server.js
+[debug] [2023-11-22T19:43:36.871Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2023-11-22T19:43:36.872Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\server\server.js
+[debug] [2023-11-22T19:43:36.929Z] [unzip] Entry: server/server.js.map (compressed_size=289157 bytes, uncompressed_size=1325651 bytes)
+[debug] [2023-11-22T19:43:36.929Z] [unzip] Processing entry: server\server.js.map
+[debug] [2023-11-22T19:43:36.930Z] [unzip] else mkdir: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2023-11-22T19:43:36.931Z] [unzip] deflating: C:\Users\LutiM\.cache\firebase\emulators\ui-v1.11.7\server\server.js.map
+[debug] [2023-11-22T19:43:36.978Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-11-22T19:43:36.978Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-11-22T19:43:36.979Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\LutiM\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\LutiM\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-11-22T19:43:37.861Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-11-22T19:43:37.864Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\" for Cloud Functions..."}}
+[debug] [2023-11-22T19:43:38.125Z] Validating nodejs source
+[debug] [2023-11-22T19:43:42.446Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T19:43:42.447Z] Building nodejs source
+[debug] [2023-11-22T19:43:42.447Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T19:43:42.450Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T19:43:42.457Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8350
+
+[debug] [2023-11-22T19:43:43.719Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[info] +  functions[us-central1-createUser]: http function initialized (http://127.0.0.1:5001/splitsmart-211ac/us-central1/createUser). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/splitsmart-211ac/us-central1/createUser)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-11-22T19:45:27.151Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T19:45:28.158Z] Validating nodejs source
+[debug] [2023-11-22T19:45:30.203Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T19:45:30.204Z] Building nodejs source
+[debug] [2023-11-22T19:45:30.204Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T19:45:30.210Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T19:45:30.219Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8260
+
+[debug] [2023-11-22T19:45:32.001Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T19:45:36.733Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T19:45:37.740Z] Validating nodejs source
+[debug] [2023-11-22T19:45:40.895Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T19:45:40.896Z] Building nodejs source
+[debug] [2023-11-22T19:45:40.897Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T19:45:40.913Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T19:45:40.946Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8660
+
+[debug] [2023-11-22T19:45:44.387Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T19:45:53.893Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T19:45:54.906Z] Validating nodejs source
+[debug] [2023-11-22T19:45:56.708Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T19:45:56.708Z] Building nodejs source
+[debug] [2023-11-22T19:45:56.709Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T19:45:56.711Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T19:45:56.721Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8236
+
+[debug] [2023-11-22T19:45:57.638Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T19:46:14.724Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T19:46:15.731Z] Validating nodejs source
+[debug] [2023-11-22T19:46:18.047Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T19:46:18.047Z] Building nodejs source
+[debug] [2023-11-22T19:46:18.047Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T19:46:18.049Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T19:46:18.057Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8576
+
+[debug] [2023-11-22T19:46:22.054Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T21:29:29.287Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T21:29:30.290Z] Validating nodejs source
+[debug] [2023-11-22T21:29:32.143Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T21:29:32.144Z] Building nodejs source
+[debug] [2023-11-22T21:29:32.144Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T21:29:32.146Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T21:29:32.158Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8080
+
+[debug] [2023-11-22T21:29:33.547Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T21:30:00.630Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T21:30:01.645Z] Validating nodejs source
+[debug] [2023-11-22T21:30:03.590Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T21:30:03.591Z] Building nodejs source
+[debug] [2023-11-22T21:30:03.591Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T21:30:03.594Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T21:30:03.627Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8703
+
+[debug] [2023-11-22T21:30:04.578Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T21:30:20.393Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T21:30:21.398Z] Validating nodejs source
+[debug] [2023-11-22T21:30:23.233Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T21:30:23.234Z] Building nodejs source
+[debug] [2023-11-22T21:30:23.234Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T21:30:23.235Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T21:30:23.242Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8532
+
+[debug] [2023-11-22T21:30:24.261Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T21:31:03.070Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T21:31:04.075Z] Validating nodejs source
+[debug] [2023-11-22T21:31:06.184Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T21:31:06.184Z] Building nodejs source
+[debug] [2023-11-22T21:31:06.184Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T21:31:06.186Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T21:31:06.193Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8183
+
+[debug] [2023-11-22T21:31:07.262Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T21:31:30.378Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T21:31:31.390Z] Validating nodejs source
+[debug] [2023-11-22T21:31:33.191Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T21:31:33.191Z] Building nodejs source
+[debug] [2023-11-22T21:31:33.191Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T21:31:33.193Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T21:31:33.200Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8416
+
+[debug] [2023-11-22T21:31:34.219Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T21:44:02.977Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T21:44:04.164Z] Validating nodejs source
+[debug] [2023-11-22T21:44:14.700Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1111:20)
+    at Object.spawnSync (node:child_process:814:24)
+    at Function.spawnSync [as sync] (C:\Users\LutiM\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\LutiM\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\LutiM\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\LutiM\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\LutiM\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\LutiM\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-11-22T21:44:14.718Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T21:44:14.720Z] Building nodejs source
+[debug] [2023-11-22T21:44:14.720Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T21:44:14.742Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T21:44:14.784Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8418
+
+[debug] [2023-11-22T21:44:22.581Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T21:44:26.907Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T21:44:27.911Z] Validating nodejs source
+[debug] [2023-11-22T21:44:36.127Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T21:44:36.129Z] Building nodejs source
+[debug] [2023-11-22T21:44:36.129Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T21:44:36.137Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T21:44:36.173Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8911
+
+[debug] [2023-11-22T21:44:37.455Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[debug] [2023-11-22T21:45:45.613Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-11-22T21:45:46.621Z] Validating nodejs source
+[debug] [2023-11-22T21:45:48.463Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T21:45:48.464Z] Building nodejs source
+[debug] [2023-11-22T21:45:48.464Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T21:45:48.467Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T21:45:48.475Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-11-22T21:45:48.490Z] File C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Mitul\\Learning\\WD Waterloo\\Sem 1\\JavaScript\\Project\\splitsmart\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8359
+
+[debug] [2023-11-22T21:45:49.504Z] Validating nodejs source
+[debug] [2023-11-22T21:45:51.282Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-11-22T21:45:51.283Z] Building nodejs source
+[debug] [2023-11-22T21:45:51.283Z] Failed to find version of module node: reached end of search path C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-11-22T21:45:51.286Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-11-22T21:45:51.287Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-11-22T21:45:51.300Z] Found firebase-functions binary at 'C:\Mitul\Learning\WD Waterloo\Sem 1\JavaScript\Project\splitsmart\functions\node_modules\.bin\firebase-functions'
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}
+[info] Serving at port 8488
+
+[debug] [2023-11-22T21:45:52.073Z] Got response from /__/functions.yaml {"endpoints":{"createUser":{"platform":"gcfv1","labels":{},"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"callableTrigger":{},"entryPoint":"createUser"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: createUser. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: createUser."}}

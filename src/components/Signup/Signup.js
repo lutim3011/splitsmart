@@ -29,24 +29,28 @@ import {
 import { msg } from "commons/messages";
 import FormInput from "commons/formFields/FormInput";
 
-export default function Signup() {
-  const [showPassword, setShowPassword] = useState(false);
-  const [errorEmailMessage, setErrorEmailMessage] = useState("");
+import { compose } from "redux";
+import { connect, useDispatch } from "react-redux";
+import { handleNewUser } from "redux/actions/userAuthActions";
 
+function Signup(props) {
+  const [errorEmailMessage, setErrorEmailMessage] = useState("");
+  const dispatch = useDispatch();
   const {
     register,
     handleSubmit,
     trigger,
     watch,
-    control,
+
     formState: { errors, dirtyFields },
   } = useForm();
 
-  //get passwords
   const passwordValue = watch("password");
   const cPasswordValue = watch("confirmPassword");
 
-  const onSubmit = data => console.log(data);
+  const onSubmit = (data) => dispatch(handleNewUser(data));
+
+  
 
   const firstName = (
     <Box>
@@ -59,6 +63,7 @@ export default function Signup() {
         rules={FirstNameRules}
         errors={errors}
         isRequired={true}
+        trigger={trigger}
       />
     </Box>
   );
@@ -73,6 +78,7 @@ export default function Signup() {
         register={register}
         rules={LastNameRules}
         errors={errors}
+        trigger={trigger}
       />
     </Box>
   );
@@ -89,6 +95,7 @@ export default function Signup() {
         errorMsg={errorEmailMessage}
         errors={errors}
         isRequired={true}
+        trigger={trigger}
       />
     </Box>
   );
@@ -107,6 +114,7 @@ export default function Signup() {
         errors={errors}
         dirtyFields={dirtyFields}
         passwordValue={passwordValue}
+        trigger={trigger}
       />
       <FormPassword
         cPasswordValue={cPasswordValue}
@@ -149,41 +157,48 @@ export default function Signup() {
               Sign up
             </Heading>
           </Stack>
-          <Form onSubmit={handleSubmit(onSubmit)} control={control}>
-            <Box
-              rounded={"lg"}
-              bg={useColorModeValue("white", "gray.700")}
-              boxShadow={"lg"}
-              p={8}
-            >
-              <Stack spacing={4}>
-                {userName}
-                {email}
-                {passwords}
-                <Stack spacing={10} pt={2}>
-                  <Button
-                    loadingText="Submitting"
-                    size="lg"
-                    bg={"blue.400"}
-                    color={"white"}
-                    _hover={{
-                      bg: "blue.500",
-                    }}
-                    type="submit"
-                  >
-                    Sign up
-                  </Button>
-                </Stack>
-                <Stack pt={6}>
-                  <Text align={"center"}>
-                    Already a user? <Link color={"blue.400"}>Login</Link>
-                  </Text>
-                </Stack>
+
+          <Box
+            rounded={"lg"}
+            bg={useColorModeValue("white", "gray.700")}
+            boxShadow={"lg"}
+            p={8}
+          >
+            <Stack spacing={4}>
+              {userName}
+              {email}
+              {passwords}
+              <Stack spacing={10} pt={2}>
+                <Button
+                  loadingText="Submitting"
+                  size="lg"
+                  bg={"blue.400"}
+                  color={"white"}
+                  _hover={{
+                    bg: "blue.500",
+                  }}
+                  type="submit"
+                  onClick={handleSubmit(onSubmit)}
+                >
+                  Sign up
+                </Button>
               </Stack>
-            </Box>
-          </Form>
+              <Stack pt={6}>
+                <Text align={"center"}>
+                  Already a user? <Link color={"blue.400"}>Login</Link>
+                </Text>
+              </Stack>
+            </Stack>
+          </Box>
         </Stack>
       </Flex>
     </Layout>
   );
 }
+const mapStateToProps = (state) => {
+  return {
+    auth: state.firebase.auth,
+  };
+};
+
+export default compose(connect(mapStateToProps))(Signup);

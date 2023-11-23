@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { HideEye, Eye } from "assets/svg";
 import FormError from "commons/formFields/FormError";
 import TickIcon from "assets/images/icons/remove.png";
 import TickGreen from "assets/images/icons/check-green.png";
@@ -11,7 +10,7 @@ import {
   FormLabel,
   Input,
   InputGroup,
-  InputRightElement,
+    InputRightElement,
 } from "@chakra-ui/react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 const FormPassword = ({
@@ -27,7 +26,7 @@ const FormPassword = ({
   confirmPasswordMessage,
   dirtyFields,
   trigger,
-  cPasswordValue,
+    cPasswordValue,
 }) => {
   if (isConfirmPassword === true) {
     rules.validate = value => value === passwordValue || confirmPasswordMessage;
@@ -56,23 +55,23 @@ const FormPassword = ({
           </label>
         ) : null}
         <div className="signup-password">
-          <InputGroup>
-            <Input
-              innerRef={ref}
-              name={name}
-              type={show ? "text" : "password"}
-              placeholder={placeholder ? placeholder : "············"}
-              className={
-                errors[name]?.message ? "form-control required" : "form-control"
-              }
-              {...(label && htmlFor
-                ? {
-                    id: htmlFor,
-                  }
-                : {})}
-              {...rest}
-            />
-
+        <InputGroup>
+          <Input
+                        ref={ref}
+            name={name}
+            type={show ? "text" : "password"}
+            placeholder={placeholder ? placeholder : "············"}
+            className={
+              errors[name]?.message ? "form-control required" : "form-control"
+            }
+            {...(label && htmlFor
+              ? {
+                  id: htmlFor,
+                }
+              : {})}
+            {...rest}
+          />
+          
             {dirtyFields && dirtyFields[name] && (
               <div className="tick-icon">
                 <>
@@ -103,14 +102,14 @@ const FormPassword = ({
                 </>
               </div>
             )}
-
-            <InputRightElement h={"full"}>
-              <Button variant={"ghost"} onClick={toggle}>
-                {show ? <ViewIcon /> : <ViewOffIcon />}
-              </Button>
-            </InputRightElement>
-          </InputGroup>
-        </div>
+          
+          <InputRightElement h={"full"}>
+            <Button variant={"ghost"} onClick={toggle}>
+              {show ? <ViewIcon /> : <ViewOffIcon />}
+            </Button>
+          </InputRightElement>
+        </InputGroup>
+</div>
 
         <FormError msg={errors[name]?.message} />
       </div>
